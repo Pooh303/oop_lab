@@ -7,10 +7,6 @@ import java.awt.event.WindowListener;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-/**
- *
- * @author "FewPz (IG: few.pz")
- */
 public class ChatDemoController implements ActionListener, WindowListener {
 
     private ChatDemoView view;

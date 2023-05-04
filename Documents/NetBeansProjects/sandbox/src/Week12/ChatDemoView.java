@@ -6,18 +6,17 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.WindowConstants;
 
 public class ChatDemoView {
 
-    private JFrame fream;
+    private JFrame fr;
     private JTextField chatbox;
     private JTextArea console;
     private JButton btn1, btn2;
     private JPanel panel1;
 
     public ChatDemoView() {
-        fream = new JFrame("ChatDemo");
+        fr = new JFrame("ChatDemo");
         chatbox = new JTextField(45);
         console = new JTextArea(20, 45);
         btn1 = new JButton("Submit");
@@ -30,21 +29,21 @@ public class ChatDemoView {
 
         console.setEditable(false);
 
-        fream.add(console, BorderLayout.NORTH);
-        fream.add(chatbox, BorderLayout.CENTER);
-        fream.add(panel1, BorderLayout.SOUTH);
+        fr.add(console, BorderLayout.NORTH);
+        fr.add(chatbox, BorderLayout.CENTER);
+        fr.add(panel1, BorderLayout.SOUTH);
 
-        fream.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        fream.pack();
-        fream.setVisible(true);
+        fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        fr.pack();
+        fr.setVisible(true);
     }
 
     public JFrame getFream() {
-        return fream;
+        return fr;
     }
 
     public void setFream(JFrame fream) {
-        this.fream = fream;
+        this.fr = fream;
     }
 
     public JTextField getChatbox() {

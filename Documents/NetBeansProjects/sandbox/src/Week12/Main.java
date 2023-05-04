@@ -1,7 +1,6 @@
 package Week12;
 
-import java.io.*;
-
+//import java.io.*;
 public class Main {
 
 //    public static void main(String[] args) {
@@ -57,7 +56,8 @@ public class Main {
 //        }
 //    }
     public static void main(String[] args) {
-        new ChatDemoController();
+//        new ChatDemoController();
+        new StudentController();
 
     }
 }
